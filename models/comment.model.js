@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const { Schema, model } = mongoose;
+const { Schema } = mongoose;
 
 const commentSchema = new Schema({
   title: { type: String, required: true },

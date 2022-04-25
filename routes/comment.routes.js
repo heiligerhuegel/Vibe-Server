@@ -54,11 +54,7 @@ router.put("/api/comment/:id", async (req, res, next) => {
       comment,
     };
 
-    const updatedComment = await Comment.findByIdAndUpdate(
-      id,
-      { newComment },
-      { mew: true }
-    );
+    const updatedComment = await Comment.findByIdAndUpdate(id, { newComment }, { mew: true });
 
     res.status(200).json(updatedComment);
   } catch (error) {

@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const { Schema, model } = mongoose;
+const { Schema } = mongoose;
 
 const routeSchema = new Schema({
   name: { type: String, required: true },

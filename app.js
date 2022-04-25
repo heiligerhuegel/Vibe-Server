@@ -27,6 +27,9 @@ app.use("/", routesRoutes);
 const tripRoutes = require("./routes/trip.routes");
 app.use("/", tripRoutes);
 
+const ImageRoutes = require("./routes/image.routes");
+app.use("/", ImageRoutes);
+
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require("./error-handling")(app);
 

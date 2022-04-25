@@ -55,11 +55,7 @@ router.put("/api/trip/:id", async (req, res, next) => {
       routes,
     };
 
-    const updatedTrip = await Trip.findByIdAndUpdate(
-      id,
-      { newTrip },
-      { mew: true }
-    );
+    const updatedTrip = await Trip.findByIdAndUpdate(id, { newTrip }, { mew: true });
 
     res.status(200).json(updatedTrip);
   } catch (error) {
